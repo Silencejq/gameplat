@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css"> </head>
+
+<body>
+  <!-- 声明：该作业由sjq本人所做。发现问题：chorme浏览器拒绝跨域ajax（本地文件也算），由于没有放上服务端，所以对客户端浏览器做--allow-file-access-from-files处理才能运行。-->
+  <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+    <a class="btn navbar-btn btn-primary ml-2 text-white" id="ajaxload">
+      <i class="fa d-inline fa-lg fa-user-circle-o"></i>登陆</a>
+    <div class="container">
+      <img src="logo.png">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">教学管理
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-list"></span>课程浏览</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" id="jiake">
+                <span class="fa fa-star"></span>课程添加</a>
+            </li>
+            <li role="presentation" class="dropdown-divider"></li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-user"></span>教师浏览</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-plus"></span>教师添加</a>
+            </li>
+            <li role="presentation" class="dropdown-divider"></li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-home"></span>班级信息</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-plus"></span>添加班级</a>
+            </li>
+            <li role="presentation" class="dropdown-divider"></li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-qrcode"></span>学生信息</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-plus"></span>添加学生</a>
+            </li>
+          </ul>
+        </div> &nbsp;
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown"> 考试管理
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-folder-open"></span>题库管理</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-folder-open"></span>在线考试</a>
+            </li>
+          </ul>
+        </div> &nbsp;
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown"> 成绩统计
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" id="huizong">
+                <span class="fa fa-folder-open"></span>成绩汇总</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-folder-open"></span>成绩核算</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">
+                <span class="fa fa-folder-open"></span>成绩分析</a>
+            </li>
+          </ul>
+        </div> &nbsp;
+        <form class="form-inline m-0">
+          <input class="form-control mr-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="ajax1"></div>
+  <div class="py-3 bg-secondary text-white fixed-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 p-0">
+          <img class="img-fluid" src="logo.png"> </div>
+        <div class="col-md-6 text-center align-self-center">
+          <p class="mb-1">
+            <strong>SSS Inc.</strong>
+            <br>版本号 1.0.0.1
+            <br>
+            <abbr title="Phone">P:</abbr> 13012347889 </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+    $("#ajaxload").click(function(){
+    $("#ajax1").load("load.html #load");
+    });
+    $("#jiake").click(function(){
+    $("#ajax1").load("jiake.html #load");
+    });
+    $("#huizong").click(function(){
+    $("#ajax1").load("huizong.html #load");
+    });
+    });
+  </script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>
