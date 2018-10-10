@@ -1,0 +1,80 @@
+get  白夜行
+get  告白
+get  火柴人
+get  怦然心动
+get  穿越时空的少女
+get  阿基拉
+get  回忆三部曲
+get  *死亡幻觉
+get  星际穿越
+get  白雪公主杀人事件
+get  未麻的部屋
+get  千年女优
+get  东京教父
+get  红辣椒
+get  我是谁
+get  大卫戈尔的一生
+get  狩猎
+get  彗星来的那一夜
+get  地球之盐
+get  梦之安魂曲
+get  木兰花
+get  春光乍泄
+get  重庆森林
+get  东邪西毒
+get  无间道
+get  狙击电话亭
+get  被嫌弃的松子的一生
+get  红楼梦
+get  熔炉
+get  控方证人
+get  一级恐惧
+get  禁闭岛
+get  星际穿越
+get  喜剧之王
+get  父女七日变
+get  蓝色星球
+get  魔戒
+get  教父
+get  神探夏洛克
+
+get  龙与虎
+get  火影忍者
+get  寄生虫
+get  虫师
+get  东京食尸鬼
+get  东京残响
+get  死亡笔记
+get  命运石之门
+       命运石之门0
+get  星际牛仔
+get  回转企鹅罐
+get  亚人
+get  她与她的猫
+get  小魔女学园
+get  怪化猫
+get  特别的她
+get  电脑线圈
+get  重启咲良田
+get  来自深渊
+get  少女终末旅行
+get  恶魔人crybaby
+get  紫罗兰永恒花园
+
+樱庭一树 1
+凑佳苗 1
+京极夏彦
+岛田庄司
+宫部美雪 1
+松本清张 1
+谷崎润一郎 1
+
+大明王朝
+走向共和
+毛骗
+大道争锋
+拔魔
+
+R71452
+禁用笔记本键盘 sc config i8042prt start= disabled
+启用笔记本键盘 sc config i8042prt start= auto
