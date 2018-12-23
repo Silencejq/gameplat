@@ -41,7 +41,7 @@ $sql='select * from think_student where student_id ="'.$user_id.'"';
 $result2=mysqli_query($conn,$sql);
 while ( $row = $result2->fetch_array() ) {
     $p["cid"]=$row['class'];
-    $p["name"]=$row[2];
+    $p["name"]=$row[1];
  }
 $q= json_encode($p);
 echo $q;
