@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+
+<!-- 
+<script>
+	var arr =[3,5,2,6];
+	for(var k in arr){
+		
+		St=ayt+(1-a)St-1
+	};
+document.getElementById("p1").innerHTML=arr;
+</script> -->
+
+
+</body>
+
+<script>
+        // 一个普通的数组        
+        var arr =[3,5,2,6];
+		var a =0.5;
+		var index=arr.length;
+		S(index,a,arr);
+        // 普通的for 循环遍历
+		function S(index,a,arr){
+			if(index==0){
+				return arr[index];
+			}
+			else if(index>0){
+				
+			console.log(arr[index]);
+			// +(1-a)*S(index-1,a,arr);
+				
+			}
+		
+			
+			
+		
+			
+			
+		}
+       // S(index,a,arr);
+	   console.log(S(index,a,arr));
+    </script>
+	
+	<script type="text/javascript">
+		
+var afib = function (n){
+  if(n===0){return 1;} //初始的那个细胞
+  return afib(n-1)+bfib(n-1)+cfib(n-1);
+}
+var bfib = function(n){
+  if(n===0){return 0;} //一个小时之后才会生成
+  return afib(n-1);
+}
+var cfib = function(n){
+  if(n===0||n===1){return 0;} //前两小时还没生成
+  return bfib(n-1);
+}
+ 
+var time = 3;
+console.log(afib(time)+bfib(time)+cfib(time));
+
+	</script>
+</html>
